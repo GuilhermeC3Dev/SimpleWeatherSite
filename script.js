@@ -1,5 +1,5 @@
 //chave da API openweather
-const chave_API = 'c479768d43795c92da5c78ba021681b6';
+const chave_API = 'your-api-key';
 //armazenamento das cidades (padrao é cidades)
 const armazenamento_das_cidades = 'cidades';
 const clima_container = document.getElementById('clima-container');
