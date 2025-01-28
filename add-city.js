@@ -1,4 +1,4 @@
-const chave_API = 'c479768d43795c92da5c78ba021681b6';
+const chave_API = 'your-api-key';
 const armazenamento_das_cidades = 'cidades';
 const form = document.getElementById('addCityForm');
 const cityInput = document.getElementById('cityInput');
