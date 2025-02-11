@@ -1,5 +1,6 @@
 const modoEscuro = document.getElementById('modo-escuro');
 
+//adiciona a classe modo-escuro nos elementos
 function mudarModoEscuro() {
     document.body.classList.toggle('modo-escuro');
     document.querySelectorAll('.container').forEach(container => {
@@ -13,12 +14,9 @@ function mudarModoEscuro() {
 
 //carregar modo escuro
 function carregarModoEscuro() {
-    const eEscuro = localStorage.getItem('modoEscuro') === 'true';
+    const eEscuro = localStorage.getItem('modoEscuro');
     if (eEscuro) {
-        document.body.classList.add('modo-escuro');
-        document.querySelectorAll('.container').forEach(container => {
-            container.classList.add('modo-escuro');
-        });
+        mudarModoEscuro();
     }
 }
 
